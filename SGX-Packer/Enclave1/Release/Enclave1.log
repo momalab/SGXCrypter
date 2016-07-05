@@ -1,0 +1,35 @@
+﻿Build started 6/28/2016 10:45:10 PM.
+     1>Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Creating proxy/bridge routines
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /O2 /Oy- /D _WINDLL /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Enclave1.cpp
+         Enclave1.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /O2 /Oy- /D _WINDLL /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt Enclave1_t.c
+         Enclave1_t.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\IntelSGXSDK\bin\Win32\Release" sgx_trts.lib sgx_tstdc.lib sgx_tservice.lib sgx_tcrypto_opt.lib sgx_tstdcxx.lib /NODEFAULTLIB /MANIFEST:NO /PDB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.pdb" /OPT:REF /OPT:ICF /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.lib" /MACHINE:X86 /SAFESEH /DLL Release\Enclave1.obj
+         Release\Enclave1_t.obj
+            Creating library C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.lib and object C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.exp
+         Enclave1.vcxproj -> C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.dll
+       PostBuildEvent:
+         "C:\Program Files (x86)\Intel\IntelSGXSDK\bin\win32\release\sgx_sign.exe" gendata -enclave "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.dll" -out "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Release\Enclave1.hex" -config "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.config.xml"
+         :VCEnd
+         The required memory is 0x155000.
+         Succeed.
+         <EnclaveConfiguration>
+             <ProdID>0</ProdID>
+             <ISVSVN>0</ISVSVN>
+             <StackMaxSize>0x40000</StackMaxSize>
+             <HeapMaxSize>0x100000</HeapMaxSize>
+             <TCSNum>1</TCSNum>
+             <TCSPolicy>1</TCSPolicy>
+             <DisableDebug>0</DisableDebug>
+             <MiscSelect>0</MiscSelect>
+             <MiscMask>0xFFFFFFFF</MiscMask>
+         </EnclaveConfiguration>
+     1>Done Building Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.01

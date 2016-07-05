@@ -1,0 +1,17 @@
+﻿Build started 6/29/2016 7:21:45 AM.
+     1>Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt sgx_crypter.cpp
+         sgx_crypter.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\Release\ConsoleApplication4.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\IntelSGXSDK\\bin\Win32\Release" sgx_urts.lib sgx_uae_service.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\Release\ConsoleApplication4.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\Release\ConsoleApplication4.lib" /MACHINE:X86 /SAFESEH Release\Enclave1_u.obj
+         Release\resourcemanager.obj
+         Release\sgx_crypter.obj
+         Release\aes256.obj
+         Release\stdafx.obj
+         ConsoleApplication4.vcxproj -> C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\Release\ConsoleApplication4.exe
+     1>Done Building Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.70

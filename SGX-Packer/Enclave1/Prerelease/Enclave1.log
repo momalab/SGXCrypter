@@ -1,0 +1,33 @@
+﻿Build started 7/2/2016 3:59:15 AM.
+     1>Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /O2 /Oy- /D _WINDLL /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Prerelease\\" /Fd"Prerelease\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Enclave1.cpp
+         Enclave1.cpp
+     1>Enclave1.cpp(111): warning C4101: 'enkey' : unreferenced local variable
+     1>Enclave1.cpp(107): warning C4101: 'prodid' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\IntelSGXSDK\bin\Win32\Release" sgx_trts.lib sgx_tstdc.lib sgx_tservice.lib sgx_tcrypto_opt.lib sgx_tstdcxx.lib /NODEFAULTLIB /MANIFEST:NO /PDB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.pdb" /OPT:REF /OPT:ICF /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.lib" /MACHINE:X86 /SAFESEH /DLL Prerelease\Enclave1.obj
+         Prerelease\Enclave1_t.obj
+            Creating library C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.lib and object C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.exp
+         Enclave1.vcxproj -> C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.dll
+       PostBuildEvent:
+         "C:\Program Files (x86)\Intel\IntelSGXSDK\bin\win32\release\sgx_sign.exe" sign -key "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1_private.pem" -enclave "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.dll" -out "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Prerelease\Enclave1.signed.dll" -config "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.config.xml"
+         :VCEnd
+         The required memory is 0x156000.
+         Succeed.
+         <EnclaveConfiguration>
+             <ProdID>0</ProdID>
+             <ISVSVN>0</ISVSVN>
+             <StackMaxSize>0x40000</StackMaxSize>
+             <HeapMaxSize>0x100000</HeapMaxSize>
+             <TCSNum>1</TCSNum>
+             <TCSPolicy>1</TCSPolicy>
+             <DisableDebug>0</DisableDebug>
+             <MiscSelect>0</MiscSelect>
+             <MiscMask>0xFFFFFFFF</MiscMask>
+         </EnclaveConfiguration>
+     1>Done Building Project "C:\Users\Mitsos\Documents\Visual Studio 2012\Projects\Enclave1\Enclave1\Enclave1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.90
