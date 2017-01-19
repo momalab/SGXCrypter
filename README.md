@@ -2,6 +2,8 @@
 
 SGXCrypter is a novel approach on encryption based binary packing. SGXCrypter effectively removes the decryption key from the unpacking code (decryption stub) thereby eliminating the possibility of it getting compromised by static analysis/disassembly. This is achieved by retreiving the key from a remote server via _remote attestation_, a feature provided by Intel's SGX technology. By leveraging SGX, our crypter also isolates the key retreival and decryption process, thereby rendering runtime analysis impossible as well.
 
+SGXCrypter is currently able to target Windows Portable Executable (PE) files and is compatible with SGX enabled processors. The project can be built via Microsoft Visual Studio 2012, having also installed Intel SGX SDK and SGX PSW [(download link)](https://software.intel.com/en-us/sgx-sdk/download).
+
 Instructions on how to create an encrypted executable.
 
 1. Pull the repository from github and open the project SGX_Stub (in main folder).
